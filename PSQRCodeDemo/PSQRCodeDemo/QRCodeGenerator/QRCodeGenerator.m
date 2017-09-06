@@ -8,6 +8,7 @@
 
 #import "QRCodeGenerator.h"
 
+
 @implementation QRCodeGenerator
 
 static const QRCodeCorrectionLevel defaultLevel = QRCodeCorrectionLevelM;

@@ -7,8 +7,15 @@
 //
 
 #import "ViewController.h"
+#import "QRCodeGenerator.h"
 
 @interface ViewController ()
+{
+    NSString *_currentQRText;
+}
+@property (weak, nonatomic) IBOutlet UITextField *textField;
+- (IBAction)generateButtonAction:(UIButton *)sender;
+@property (weak, nonatomic) IBOutlet UIImageView *qrImageView;
 
 @end
 
@@ -16,7 +23,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    _textField.text = @"https://github.com/shuima101/PSQRCodeGenerator";
+    [self generateButtonAction:nil];
 }
 
 
@@ -25,5 +34,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+- (IBAction)generateButtonAction:(UIButton *)sender {
+    if ([_currentQRText isEqualToString:_textField.text]) {
+        return;
+    }
+    _currentQRText = _textField.text;
+    _qrImageView.image = [QRCodeGenerator generateQRCodeImageWithString:_currentQRText];
+}
 
 @end

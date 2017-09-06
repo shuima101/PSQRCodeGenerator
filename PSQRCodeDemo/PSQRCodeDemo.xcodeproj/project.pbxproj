@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E258A9611F5FC06F00C38C14 /* QRCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D8F4731F3B4FC5006F1EDC /* QRCodeGenerator.m */; };
 		E2D8F45D1F3B4F7A006F1EDC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D8F45C1F3B4F7A006F1EDC /* AppDelegate.m */; };
 		E2D8F4601F3B4F7A006F1EDC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D8F45F1F3B4F7A006F1EDC /* ViewController.m */; };
 		E2D8F4631F3B4F7A006F1EDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2D8F4611F3B4F7A006F1EDC /* Main.storyboard */; };
@@ -153,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E258A9611F5FC06F00C38C14 /* QRCodeGenerator.m in Sources */,
 				E2D8F4601F3B4F7A006F1EDC /* ViewController.m in Sources */,
 				E2D8F46B1F3B4F7A006F1EDC /* main.m in Sources */,
 				E2D8F45D1F3B4F7A006F1EDC /* AppDelegate.m in Sources */,
@@ -291,6 +293,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ALYV3JUZ5D;
 				INFOPLIST_FILE = PSQRCodeDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.passing.PSQRCodeDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -304,6 +307,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ALYV3JUZ5D;
 				INFOPLIST_FILE = PSQRCodeDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.passing.PSQRCodeDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
